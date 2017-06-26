@@ -11,6 +11,22 @@
         text-decoration: none;
     }
 
+    .container{
+        background : url("http://i.huffpost.com/gen/2847196/images/n-SORRY-628x314.jpg") no-repeat;
+        background-size : cover;
+        background-position : 50% 50%;
+        height : 500px;
+        text-align: center;
+        color: white;
+    }
+
+    .message{
+        margin-top: 45px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+
     .content {
         margin-left: 40px;
     }
