@@ -10,13 +10,23 @@
     <body>
 
         <div class="page-header">
-            <h2><a href="">My first message</a></h2>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p><strong>かえりんは僕の彼女だ！！</strong></p>
         </div>
 
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                    对不起，让你伤心了。我会努力改正的。
+                    {% for post in posts %}
+                        <div class="post">
+                            <div class="date">
+                                {{ post.published_date }}
+                            </div>
+                            <h1><a href="">{{ post.title }}</a></h1>
+                            <p>{{ post.text|linebreaksbr }}</p>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
